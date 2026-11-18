@@ -128,7 +128,7 @@ local headerFrame = create("Frame", {
 		Size = UDim2.new(1, -100, 0, 14),
 		Position = UDim2.new(0, 56, 0, 28),
 		BackgroundTransparency = 1,
-		Text = "CELESTIAL · all items · scales + skin synced",
+		Text = "Yadsan · all items · scales + skin synced",
 		TextColor3 = COLORS.AccentCyan,
 		Font = Enum.Font.Code,
 		TextSize = 9,
@@ -178,7 +178,7 @@ local antiCopyButton = create("TextButton", {
 	Size = UDim2.new(1, -24, 0, 36),
 	Position = UDim2.new(0, 12, 0, 106),
 	BackgroundColor3 = COLORS.ToggleOff,
-	Text = "🛡 OUTFIT LOCK: OFF",
+	Text = "🛡 ANTIOUTFITSTEAL LOCK: OFF",
 	TextColor3 = COLORS.TextPrimary,
 	Font = Enum.Font.GothamBold,
 	TextSize = 11,
@@ -330,11 +330,11 @@ antiCopyButton.MouseButton1Click:Connect(function()
 				lockedDescription = desc
 			end
 		end
-		antiCopyButton.Text = "🛡 OUTFIT LOCK: ON"
+		antiCopyButton.Text = "🛡 ANTIOUTFITSTEAL LOCK: ON"
 		addLog("Outfit snapshot locked", COLORS.AccentGold)
 	else
 		lockedDescription = nil
-		antiCopyButton.Text = "🛡 OUTFIT LOCK: OFF"
+		antiCopyButton.Text = "🛡 ANTIOUTFITSTEAL LOCK: OFF"
 		addLog("Outfit lock disabled", COLORS.TextMuted)
 	end
 
@@ -653,3 +653,20 @@ end)
 -- Initialize default mode
 selectMode("safe")
 addLog("CelestialFit loaded for @" .. LocalPlayer.Name, COLORS.AccentViolet)
+
+-- Announcement
+task.spawn(function()
+    local text = "------------------//////CELESTIAL OUTFIT COPIER LOADED (Made by Yadsan_Godverse 🔱-- CELESTIAL SYNDICATE ON TOP🔮🏴) ////////--------------------"
+    local textChatService = game:GetService("TextChatService")
+    if textChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+        local channel = textChatService:FindFirstChild("TextChannels") and textChatService.TextChannels:FindFirstChild("RBXGeneral")
+        if channel then
+            channel:SendAsync(text)
+        end
+    else
+        local defaultEvents = ReplicatedStorage:FindFirstChild("DefaultChatSystemChatEvents")
+        if defaultEvents and defaultEvents:FindFirstChild("SayMessageRequest") then
+            defaultEvents.SayMessageRequest:FireServer(text, "All")
+        end
+    end
+end)
