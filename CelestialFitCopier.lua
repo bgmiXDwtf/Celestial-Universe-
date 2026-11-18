@@ -108,7 +108,7 @@ local headerFrame = create("Frame", {
 		create("TextLabel", {
 			Size = UDim2.new(1, 0, 1, 0),
 			BackgroundTransparency = 1,
-			Text = "✦",
+			Text = "🔮",
 			TextColor3 = COLORS.TextPrimary,
 			Font = Enum.Font.GothamBlack,
 			TextSize = 19,
@@ -140,7 +140,7 @@ local closeButton = create("TextButton", {
 	Size = UDim2.new(0, 30, 0, 30),
 	Position = UDim2.new(1, -40, 0, 13),
 	BackgroundColor3 = COLORS.DangerBg,
-	Text = "✕",
+	Text = "⚔️",
 	TextColor3 = COLORS.DangerRed,
 	Font = Enum.Font.GothamBold,
 	TextSize = 14,
@@ -260,7 +260,7 @@ local function addLog(message, color)
 	create("TextLabel", {
 		Size = UDim2.new(1, -8, 0, 12),
 		BackgroundTransparency = 1,
-		Text = "✦ " .. message,
+		Text = "🔮 " .. message,
 		TextColor3 = color or COLORS.TextMuted,
 		Font = Enum.Font.Code,
 		TextSize = 9,
