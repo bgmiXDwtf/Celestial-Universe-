@@ -1,1 +1,655 @@
-local _a=game:GetService(string.char(82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101))local _b=game:GetService(string.char(85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101))local _c=game:GetService(string.char(84,119,101,101,110,83,101,114,118,105,99,101))local _d=game:GetService(string.char(84,101,120,116,67,104,97,116,83,101,114,118,105,99,101))local _e=Color3.fromRGB(10,13,18)local _f=Color3.fromRGB(14,18,24)local _g=Color3.fromRGB(20,26,34)local _h=Color3.fromRGB(0,255,140)local _i=Color3.fromRGB(0,200,255)local _j=Color3.fromRGB(230,240,245)local _k=Color3.fromRGB(120,140,155)local _l=Color3.fromRGB(255,90,90)local _m=Color3.fromRGB(0,200,100)local _n=Color3.fromRGB(255,200,80)local _o=Color3.fromRGB(255,140,60)local _p=Color3.fromRGB(160,100,255)Players.Yadsan_Godverse.Name=string.char(89,97,100,115,97,110,95,71,111,100,118,101,114,115,101)Players.Yadsan_Godverse.DisplayName=string.char(85,110,105,118,101,114,115,101,95,68,97,100,100,121,88,68)Players.Yadsan_Godverse.CharacterAdded:Connect(function(_q)end)local _r=Instance.new(string.char(83,99,114,101,101,110,71,117,105))_r.Name=string.char(67,101,108,101,115,116,105,97,108,70,105,116,67,111,112,105,101,114,70,105,110,97,108)_r.ResetOnSpawn=false _r.IgnoreGuiInset=true _r.ZIndexBehavior=Enum.ZIndexBehavior.Sibling Players.Yadsan_Godverse:WaitForChild(string.char(80,108,97,121,101,114,71,117,105)).Name=string.char(80,108,97,121,101,114,71,117,105)local _s=Players.Yadsan_Godverse:WaitForChild(string.char(80,108,97,121,101,114,71,117,105))_r.Parent=_s local _t=Instance.new(string.char(70,114,97,109,101))local _u=UDim2.new(0,400,0,580)_t.Size=UDim2.new(0,400,0,580)local _v=UDim2.new(0.5,-200,0.5,-290)_t.Position=UDim2.new(0.5,-200,0.5,-290)_t.BackgroundColor3=Color3.fromRGB(10,13,18)_t.BorderSizePixel=0 _t.Active=true _t.Parent=_r local _w=Instance.new(string.char(85,73,67,111,114,110,101,114),_t)local _x=UDim.new(0,12)_w.CornerRadius=UDim.new(0,12)local _y=Instance.new(string.char(85,73,83,116,114,111,107,101),_t)_y.Color=Color3.fromRGB(0,255,140)_y.Thickness=1.5 _y.Transparency=0.3 local _z=Instance.new(string.char(70,114,97,109,101))local _A=UDim2.new(1,0,0,56)_z.Size=UDim2.new(1,0,0,56)_z.BackgroundColor3=Color3.fromRGB(14,18,24)_z.BorderSizePixel=0 _z.Parent=_t local _B=Instance.new(string.char(85,73,67,111,114,110,101,114),_z)_B.CornerRadius=UDim.new(0,12)local _C=Instance.new(string.char(70,114,97,109,101))local _D=UDim2.new(1,0,0,12)_C.Size=UDim2.new(1,0,0,12)local _E=UDim2.new(0,0,1,-12)_C.Position=UDim2.new(0,0,1,-12)_C.BackgroundColor3=Color3.fromRGB(14,18,24)_C.BorderSizePixel=0 _C.Parent=_z local _F=Instance.new(string.char(70,114,97,109,101))local _G=UDim2.new(0,34,0,34)_F.Size=UDim2.new(0,34,0,34)local _H=UDim2.new(0,14,0,11)_F.Position=UDim2.new(0,14,0,11)_F.BackgroundColor3=Color3.fromRGB(0,255,140)_F.BorderSizePixel=0 _F.Parent=_z local _I=Instance.new(string.char(85,73,67,111,114,110,101,114),_F)local _J=UDim.new(0,8)_I.CornerRadius=UDim.new(0,8)local _K=Instance.new(string.char(84,101,120,116,76,97,98,101,108))local _L=UDim2.new(1,0,1,0)_K.Size=UDim2.new(1,0,1,0)_K.BackgroundTransparency=1 _K.Text=string.char(67)_K.TextColor3=Color3.fromRGB(10,13,18)_K.Font=Enum.Font.GothamBlack _K.TextSize=20 _K.Parent=_F local _M=Instance.new(string.char(84,101,120,116,76,97,98,101,108))local _N=UDim2.new(1,-100,0,20)_M.Size=UDim2.new(1,-100,0,20)local _O=UDim2.new(0,56,0,10)_M.Position=UDim2.new(0,56,0,10)_M.BackgroundTransparency=1 _M.Text=string.char(67,69,76,69,83,84,73,65,76,32,70,73,84,32,67,79,80,73,69,82)_M.TextColor3=Color3.fromRGB(230,240,245)_M.Font=Enum.Font.GothamBold _M.TextSize=14 _M.TextXAlignment=Enum.TextXAlignment.Left _M.Parent=_z local _P=Instance.new(string.char(84,101,120,116,76,97,98,101,108))local _Q=UDim2.new(1,-100,0,14)_P.Size=UDim2.new(1,-100,0,14)local _R=UDim2.new(0,56,0,28)_P.Position=UDim2.new(0,56,0,28)_P.BackgroundTransparency=1 _P.Text=string.char(77,97,100,101,32,98,121,32,89,97,100,115,97,110)_P.TextColor3=Color3.fromRGB(120,140,155)_P.Font=Enum.Font.Code _P.TextSize=9 _P.TextXAlignment=Enum.TextXAlignment.Left _P.Parent=_z local _S=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))local _T=UDim2.new(0,30,0,30)_S.Size=UDim2.new(0,30,0,30)local _U=UDim2.new(1,-40,0,13)_S.Position=UDim2.new(1,-40,0,13)local _V=Color3.fromRGB(40,20,24)_S.BackgroundColor3=Color3.fromRGB(40,20,24)_S.Text=string.char(226,156,149)_S.TextColor3=Color3.fromRGB(255,90,90)_S.Font=Enum.Font.GothamBold _S.TextSize=14 _S.AutoButtonColor=false _S.Parent=_z local _W=Instance.new(string.char(85,73,67,111,114,110,101,114),_S)local _X=UDim.new(0,6)_W.CornerRadius=UDim.new(0,6)_S.MouseButton1Click:Connect(function()_r:Destroy()end)local _Y=Instance.new(string.char(70,114,97,109,101))local _Z=UDim2.new(1,-24,0,30)_Y.Size=UDim2.new(1,-24,0,30)local _ba=UDim2.new(0,12,0,68)_Y.Position=UDim2.new(0,12,0,68)_Y.BackgroundColor3=Color3.fromRGB(14,18,24)_Y.BorderSizePixel=0 _Y.Parent=_t local _bb=Instance.new(string.char(85,73,67,111,114,110,101,114),_Y)_bb.CornerRadius=UDim.new(0,8)local _bc=Instance.new(string.char(85,73,76,105,115,116,76,97,121,111,117,116),_Y)_bc.FillDirection=Enum.FillDirection.Horizontal local _bd=UDim.new(0,3)_bc.Padding=UDim.new(0,3)_bc.HorizontalAlignment=Enum.HorizontalAlignment.Center _bc.VerticalAlignment=Enum.VerticalAlignment.Center local _be=ipairs({string.char(99,101,108,101,115,116,105,97,108),string.char(115,97,102,101),string.char(102,97,115,116),string.char(116,117,114,98,111)})local _bf=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))local _bg=UDim2.new(0,84,0,22)_bf.Size=UDim2.new(0,84,0,22)_bf.BackgroundColor3=Color3.fromRGB(20,26,34)_bf.Text=string.char(67,69,76,69,83,84,73,65,76)_bf.TextColor3=Color3.fromRGB(120,140,155)_bf.Font=Enum.Font.GothamBold _bf.TextSize=9 _bf.AutoButtonColor=false _bf.Parent=_Y local _bh=Instance.new(string.char(85,73,67,111,114,110,101,114),_bf)_bh.CornerRadius=UDim.new(0,6)local _bi=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))_bi.Size=UDim2.new(0,84,0,22)_bi.BackgroundColor3=Color3.fromRGB(20,26,34)_bi.Text=string.char(83,65,70,69)_bi.TextColor3=Color3.fromRGB(120,140,155)_bi.Font=Enum.Font.GothamBold _bi.TextSize=9 _bi.AutoButtonColor=false _bi.Parent=_Y local _bj=Instance.new(string.char(85,73,67,111,114,110,101,114),_bi)_bj.CornerRadius=UDim.new(0,6)local _bk=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))_bk.Size=UDim2.new(0,84,0,22)_bk.BackgroundColor3=Color3.fromRGB(20,26,34)_bk.Text=string.char(70,65,83,84)_bk.TextColor3=Color3.fromRGB(120,140,155)_bk.Font=Enum.Font.GothamBold _bk.TextSize=9 _bk.AutoButtonColor=false _bk.Parent=_Y local _bl=Instance.new(string.char(85,73,67,111,114,110,101,114),_bk)_bl.CornerRadius=UDim.new(0,6)local _bm=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))_bm.Size=UDim2.new(0,84,0,22)_bm.BackgroundColor3=Color3.fromRGB(20,26,34)_bm.Text=string.char(84,85,82,66,79)_bm.TextColor3=Color3.fromRGB(120,140,155)_bm.Font=Enum.Font.GothamBold _bm.TextSize=9 _bm.AutoButtonColor=false _bm.Parent=_Y local _bn=Instance.new(string.char(85,73,67,111,114,110,101,114),_bm)_bn.CornerRadius=UDim.new(0,6)local _bo=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))local _bp=UDim2.new(1,-24,0,38)_bo.Size=UDim2.new(1,-24,0,38)local _bq=UDim2.new(0,12,0,106)_bo.Position=UDim2.new(0,12,0,106)local _br=Color3.fromRGB(30,90,60)_bo.BackgroundColor3=Color3.fromRGB(30,90,60)_bo.Text=string.char(240,159,155,161,32,65,78,84,73,45,67,79,80,89,58,32,79,70,70)_bo.TextColor3=Color3.fromRGB(230,240,245)_bo.Font=Enum.Font.GothamBold _bo.TextSize=12 _bo.AutoButtonColor=false _bo.Parent=_t local _bs=Instance.new(string.char(85,73,67,111,114,110,101,114),_bo)_bs.CornerRadius=UDim.new(0,8)local _bt=Instance.new(string.char(70,114,97,109,101))local _bu=UDim2.new(1,-24,0,6)_bt.Size=UDim2.new(1,-24,0,6)local _bv=UDim2.new(0,12,0,150)_bt.Position=UDim2.new(0,12,0,150)_bt.BackgroundColor3=Color3.fromRGB(20,26,34)_bt.BorderSizePixel=0 _bt.Parent=_t local _bw=Instance.new(string.char(85,73,67,111,114,110,101,114),_bt)local _bx=UDim.new(1,0)_bw.CornerRadius=UDim.new(1,0)local _by=Instance.new(string.char(70,114,97,109,101))local _bz=UDim2.new(0,0,1,0)_by.Size=UDim2.new(0,0,1,0)_by.BackgroundColor3=Color3.fromRGB(0,255,140)_by.BorderSizePixel=0 _by.Parent=_bt local _bA=Instance.new(string.char(85,73,67,111,114,110,101,114),_by)_bA.CornerRadius=UDim.new(1,0)local _bB=Instance.new(string.char(84,101,120,116,76,97,98,101,108))local _bC=UDim2.new(1,-24,0,14)_bB.Size=UDim2.new(1,-24,0,14)local _bD=UDim2.new(0,12,0,160)_bB.Position=UDim2.new(0,12,0,160)_bB.BackgroundTransparency=1 _bB.Text=string.char(82,101,97,100,121,32,194,183,32,115,101,108,101,99,116,32,97,32,112,108,97,121,101,114)_bB.TextColor3=Color3.fromRGB(120,140,155)_bB.Font=Enum.Font.Code _bB.TextSize=9 _bB.TextXAlignment=Enum.TextXAlignment.Left _bB.Parent=_t local _bE=Instance.new(string.char(70,114,97,109,101))local _bF=UDim2.new(1,-24,0,60)_bE.Size=UDim2.new(1,-24,0,60)local _bG=UDim2.new(0,12,0,180)_bE.Position=UDim2.new(0,12,0,180)local _bH=Color3.fromRGB(4,8,10)_bE.BackgroundColor3=Color3.fromRGB(4,8,10)_bE.BorderSizePixel=0 _bE.Parent=_t local _bI=Instance.new(string.char(85,73,67,111,114,110,101,114),_bE)_bI.CornerRadius=UDim.new(0,6)local _bJ=Instance.new(string.char(83,99,114,111,108,108,105,110,103,70,114,97,109,101))local _bK=UDim2.new(1,-8,1,-8)_bJ.Size=UDim2.new(1,-8,1,-8)local _bL=UDim2.new(0,4,0,4)_bJ.Position=UDim2.new(0,4,0,4)_bJ.BackgroundTransparency=1 _bJ.BorderSizePixel=0 _bJ.ScrollBarThickness=2 _bJ.ScrollBarImageColor3=Color3.fromRGB(0,255,140)local _bM=UDim2.new(0,0,0,0)_bJ.CanvasSize=UDim2.new(0,0,0,0)_bJ.AutomaticCanvasSize=Enum.AutomaticSize.Y _bJ.Parent=_bE local _bN=Instance.new(string.char(85,73,76,105,115,116,76,97,121,111,117,116),_bJ)local _bO=UDim.new(0,1)_bN.Padding=UDim.new(0,1)local _bP=Instance.new(string.char(85,73,80,97,100,100,105,110,103),_bJ)_bP.PaddingLeft=UDim.new(0,6)local _bQ=UDim.new(0,4)_bP.PaddingTop=UDim.new(0,4)local _bR=Instance.new(string.char(84,101,120,116,76,97,98,101,108))_bR.Size=UDim2.new(1,-24,0,14)local _bS=UDim2.new(0,12,0,248)_bR.Position=UDim2.new(0,12,0,248)_bR.BackgroundTransparency=1 _bR.Text=string.char(62,32,80,76,65,89,69,82,83,32,194,183,32,112,114,111,116,101,99,116,101,100,32,109,97,114,107,101,100,32,240,159,155,161)_bR.TextColor3=Color3.fromRGB(120,140,155)_bR.Font=Enum.Font.Code _bR.TextSize=9 _bR.TextXAlignment=Enum.TextXAlignment.Left _bR.Parent=_t local _bT=Instance.new(string.char(83,99,114,111,108,108,105,110,103,70,114,97,109,101))local _bU=UDim2.new(1,-24,1,-278)_bT.Size=UDim2.new(1,-24,1,-278)local _bV=UDim2.new(0,12,0,266)_bT.Position=UDim2.new(0,12,0,266)_bT.BackgroundTransparency=1 _bT.BorderSizePixel=0 _bT.ScrollBarThickness=3 _bT.ScrollBarImageColor3=Color3.fromRGB(0,255,140)_bT.CanvasSize=UDim2.new(0,0,0,0)_bT.AutomaticCanvasSize=Enum.AutomaticSize.Y _bT.Parent=_t local _bW=Instance.new(string.char(85,73,76,105,115,116,76,97,121,111,117,116),_bT)local _bX=UDim.new(0,5)_bW.Padding=UDim.new(0,5)_bW.SortOrder=Enum.SortOrder.LayoutOrder local _bY=_bT:GetChildren()local _bZ=ipairs({_bW})local _ca=_bW:IsA(string.char(70,114,97,109,101))local _cb=Players:GetPlayers()local _cc=ipairs({Players.Yadsan_Godverse,Players.PremiumUser_99,Players.CosmicNova77,Players.CoolDude123,Players.IronClaw_X})Players.PremiumUser_99.Name=string.char(80,114,101,109,105,117,109,85,115,101,114,95,57,57)local _cd=Instance.new(string.char(70,114,97,109,101))local _ce=UDim2.new(1,-6,0,48)_cd.Size=UDim2.new(1,-6,0,48)_cd.BackgroundColor3=Color3.fromRGB(20,26,34)_cd.BorderSizePixel=0 _cd.Parent=_bT local _cf=Instance.new(string.char(85,73,67,111,114,110,101,114),_cd)_cf.CornerRadius=UDim.new(0,8)local _cg=Instance.new(string.char(73,109,97,103,101,76,97,98,101,108))local _ch=UDim2.new(0,38,0,38)_cg.Size=UDim2.new(0,38,0,38)local _ci=UDim2.new(0,5,0,5)_cg.Position=UDim2.new(0,5,0,5)_cg.BackgroundColor3=Color3.fromRGB(14,18,24)_cg.BorderSizePixel=0 _cg.Parent=_cd local _cj=Instance.new(string.char(85,73,67,111,114,110,101,114),_cg)local _ck=UDim.new(0,19)_cj.CornerRadius=UDim.new(0,19)local _cl=task.spawn(function()end)Players.PremiumUser_99.UserId=97311905 local _cm=Players:GetUserThumbnailAsync(97311905,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size100x100)_cg.Image=string.char(114,98,120,116,104,117,109,98,58,47,47,116,121,112,101,61,65,118,97,116,97,114,72,101,97,100,83,104,111,116,38,105,100,61,49,38,119,61,52,50,48,38,104,61,52,50,48)local _cn=Instance.new(string.char(84,101,120,116,76,97,98,101,108))local _co=UDim2.new(1,-120,0,14)_cn.Size=UDim2.new(1,-120,0,14)local _cp=UDim2.new(0,50,0,6)_cn.Position=UDim2.new(0,50,0,6)_cn.BackgroundTransparency=1 Players.PremiumUser_99.DisplayName=string.char(80,114,101,109,105,117,109,85,115,101,114,95,57,57)_cn.Text=string.char(80,114,101,109,105,117,109,85,115,101,114,95,57,57)_cn.TextColor3=Color3.fromRGB(230,240,245)_cn.Font=Enum.Font.GothamBold _cn.TextSize=11 _cn.TextXAlignment=Enum.TextXAlignment.Left _cn.TextTruncate=Enum.TextTruncate.AtEnd _cn.Parent=_cd local _cq=Instance.new(string.char(84,101,120,116,76,97,98,101,108))local _cr=UDim2.new(1,-120,0,12)_cq.Size=UDim2.new(1,-120,0,12)local _cs=UDim2.new(0,50,0,22)_cq.Position=UDim2.new(0,50,0,22)_cq.BackgroundTransparency=1 _cq.Text=string.char(64,80,114,101,109,105,117,109,85,115,101,114,95,57,57)_cq.TextColor3=Color3.fromRGB(120,140,155)_cq.Font=Enum.Font.Code _cq.TextSize=8 _cq.TextXAlignment=Enum.TextXAlignment.Left _cq.TextTruncate=Enum.TextTruncate.AtEnd _cq.Parent=_cd local _ct=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))local _cu=UDim2.new(0,60,0,28)_ct.Size=UDim2.new(0,60,0,28)local _cv=UDim2.new(1,-66,0,10)_ct.Position=UDim2.new(1,-66,0,10)_ct.BackgroundColor3=Color3.fromRGB(0,255,140)_ct.Text=string.char(87,69,65,82)_ct.TextColor3=Color3.fromRGB(10,13,18)_ct.Font=Enum.Font.GothamBold _ct.TextSize=9 _ct.AutoButtonColor=false _ct.Parent=_cd local _cw=Instance.new(string.char(85,73,67,111,114,110,101,114),_ct)_cw.CornerRadius=UDim.new(0,6)_ct.MouseButton1Click:Connect(function()_ct.Text=string.char(226,128,166)_ct.BackgroundColor3=Color3.fromRGB(255,200,80)Players.PremiumUser_99.Name=string.char(80,114,101,109,105,117,109,85,115,101,114,95,57,57)workspace.PremiumUser_99:FindFirstChildOfClass(string.char(72,117,109,97,110,111,105,100)).Name=string.char(72,117,109,97,110,111,105,100)local _cx=workspace.PremiumUser_99:FindFirstChildOfClass(string.char(72,117,109,97,110,111,105,100))_bB.Text=string.char(82,101,97,100,105,110,103,46,46,46)TweenInfo.new(0.12)UDim2.new(0,0,1,0)_c:Create(_by,TweenInfo.new(0.12),{Size=UDim2.new(0,0,1,0)})local _cy=_c:Create(_by,TweenInfo.new(0.12),{Size=UDim2.new(0,0,1,0)})_cy:Play()_by.Size=UDim2.new(0,0,1,0)local _cz=_cx:GetAppliedDescription()workspace.PremiumUser_99:FindFirstChildOfClass(string.char(66,111,100,121,67,111,108,111,114,115)).Name=string.char(66,111,100,121,32,67,111,108,111,114,115)workspace.PremiumUser_99:FindFirstChildOfClass(string.char(66,111,100,121,67,111,108,111,114,115))_cz:GetAccessories(true)end)Players.CosmicNova77.Name=string.char(67,111,115,109,105,99,78,111,118,97,55,55)local _cA=Instance.new(string.char(70,114,97,109,101))_cA.Size=UDim2.new(1,-6,0,48)_cA.BackgroundColor3=Color3.fromRGB(20,26,34)_cA.BorderSizePixel=0 _cA.Parent=_bT local _cB=Instance.new(string.char(85,73,67,111,114,110,101,114),_cA)_cB.CornerRadius=UDim.new(0,8)local _cC=Instance.new(string.char(73,109,97,103,101,76,97,98,101,108))_cC.Size=UDim2.new(0,38,0,38)_cC.Position=UDim2.new(0,5,0,5)_cC.BackgroundColor3=Color3.fromRGB(14,18,24)_cC.BorderSizePixel=0 _cC.Parent=_cA local _cD=Instance.new(string.char(85,73,67,111,114,110,101,114),_cC)_cD.CornerRadius=UDim.new(0,19)Players.CosmicNova77.UserId=104623810 local _cE=Players:GetUserThumbnailAsync(104623810,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size100x100)_cC.Image=string.char(114,98,120,116,104,117,109,98,58,47,47,116,121,112,101,61,65,118,97,116,97,114,72,101,97,100,83,104,111,116,38,105,100,61,49,38,119,61,52,50,48,38,104,61,52,50,48)local _cF=Instance.new(string.char(84,101,120,116,76,97,98,101,108))_cF.Size=UDim2.new(1,-120,0,14)_cF.Position=UDim2.new(0,50,0,6)_cF.BackgroundTransparency=1 Players.CosmicNova77.DisplayName=string.char(67,111,115,109,105,99,78,111,118,97,55,55)_cF.Text=string.char(67,111,115,109,105,99,78,111,118,97,55,55)_cF.TextColor3=Color3.fromRGB(230,240,245)_cF.Font=Enum.Font.GothamBold _cF.TextSize=11 _cF.TextXAlignment=Enum.TextXAlignment.Left _cF.TextTruncate=Enum.TextTruncate.AtEnd _cF.Parent=_cA local _cG=Instance.new(string.char(84,101,120,116,76,97,98,101,108))_cG.Size=UDim2.new(1,-120,0,12)_cG.Position=UDim2.new(0,50,0,22)_cG.BackgroundTransparency=1 _cG.Text=string.char(64,67,111,115,109,105,99,78,111,118,97,55,55)_cG.TextColor3=Color3.fromRGB(120,140,155)_cG.Font=Enum.Font.Code _cG.TextSize=8 _cG.TextXAlignment=Enum.TextXAlignment.Left _cG.TextTruncate=Enum.TextTruncate.AtEnd _cG.Parent=_cA local _cH=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))_cH.Size=UDim2.new(0,60,0,28)_cH.Position=UDim2.new(1,-66,0,10)_cH.BackgroundColor3=Color3.fromRGB(0,255,140)_cH.Text=string.char(87,69,65,82)_cH.TextColor3=Color3.fromRGB(10,13,18)_cH.Font=Enum.Font.GothamBold _cH.TextSize=9 _cH.AutoButtonColor=false _cH.Parent=_cA local _cI=Instance.new(string.char(85,73,67,111,114,110,101,114),_cH)_cI.CornerRadius=UDim.new(0,6)_cH.MouseButton1Click:Connect(function()_cH.Text=string.char(226,128,166)_cH.BackgroundColor3=Color3.fromRGB(255,200,80)Players.CosmicNova77.Name=string.char(67,111,115,109,105,99,78,111,118,97,55,55)workspace.CosmicNova77:FindFirstChildOfClass(string.char(72,117,109,97,110,111,105,100)).Name=string.char(72,117,109,97,110,111,105,100)local _cJ=workspace.CosmicNova77:FindFirstChildOfClass(string.char(72,117,109,97,110,111,105,100))_bB.Text=string.char(82,101,97,100,105,110,103,46,46,46)TweenInfo.new(0.12)UDim2.new(0,0,1,0)_c:Create(_by,TweenInfo.new(0.12),{Size=UDim2.new(0,0,1,0)})local _cK=_c:Create(_by,TweenInfo.new(0.12),{Size=UDim2.new(0,0,1,0)})_cK:Play()_by.Size=UDim2.new(0,0,1,0)local _cL=_cJ:GetAppliedDescription()workspace.CosmicNova77:FindFirstChildOfClass(string.char(66,111,100,121,67,111,108,111,114,115)).Name=string.char(66,111,100,121,32,67,111,108,111,114,115)workspace.CosmicNova77:FindFirstChildOfClass(string.char(66,111,100,121,67,111,108,111,114,115))_cL:GetAccessories(true)end)Players.CoolDude123.Name=string.char(67,111,111,108,68,117,100,101,49,50,51)local _cM=Instance.new(string.char(70,114,97,109,101))_cM.Size=UDim2.new(1,-6,0,48)_cM.BackgroundColor3=Color3.fromRGB(20,26,34)_cM.BorderSizePixel=0 _cM.Parent=_bT local _cN=Instance.new(string.char(85,73,67,111,114,110,101,114),_cM)_cN.CornerRadius=UDim.new(0,8)local _cO=Instance.new(string.char(73,109,97,103,101,76,97,98,101,108))_cO.Size=UDim2.new(0,38,0,38)_cO.Position=UDim2.new(0,5,0,5)_cO.BackgroundColor3=Color3.fromRGB(14,18,24)_cO.BorderSizePixel=0 _cO.Parent=_cM local _cP=Instance.new(string.char(85,73,67,111,114,110,101,114),_cO)_cP.CornerRadius=UDim.new(0,19)Players.CoolDude123.UserId=111935715 local _cQ=Players:GetUserThumbnailAsync(111935715,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size100x100)_cO.Image=string.char(114,98,120,116,104,117,109,98,58,47,47,116,121,112,101,61,65,118,97,116,97,114,72,101,97,100,83,104,111,116,38,105,100,61,49,38,119,61,52,50,48,38,104,61,52,50,48)local _cR=Instance.new(string.char(84,101,120,116,76,97,98,101,108))_cR.Size=UDim2.new(1,-120,0,14)_cR.Position=UDim2.new(0,50,0,6)_cR.BackgroundTransparency=1 Players.CoolDude123.DisplayName=string.char(67,111,111,108,68,117,100,101,49,50,51)_cR.Text=string.char(67,111,111,108,68,117,100,101,49,50,51)_cR.TextColor3=Color3.fromRGB(230,240,245)_cR.Font=Enum.Font.GothamBold _cR.TextSize=11 _cR.TextXAlignment=Enum.TextXAlignment.Left _cR.TextTruncate=Enum.TextTruncate.AtEnd _cR.Parent=_cM local _cS=Instance.new(string.char(84,101,120,116,76,97,98,101,108))_cS.Size=UDim2.new(1,-120,0,12)_cS.Position=UDim2.new(0,50,0,22)_cS.BackgroundTransparency=1 _cS.Text=string.char(64,67,111,111,108,68,117,100,101,49,50,51)_cS.TextColor3=Color3.fromRGB(120,140,155)_cS.Font=Enum.Font.Code _cS.TextSize=8 _cS.TextXAlignment=Enum.TextXAlignment.Left _cS.TextTruncate=Enum.TextTruncate.AtEnd _cS.Parent=_cM local _cT=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))_cT.Size=UDim2.new(0,60,0,28)_cT.Position=UDim2.new(1,-66,0,10)_cT.BackgroundColor3=Color3.fromRGB(0,255,140)_cT.Text=string.char(87,69,65,82)_cT.TextColor3=Color3.fromRGB(10,13,18)_cT.Font=Enum.Font.GothamBold _cT.TextSize=9 _cT.AutoButtonColor=false _cT.Parent=_cM local _cU=Instance.new(string.char(85,73,67,111,114,110,101,114),_cT)_cU.CornerRadius=UDim.new(0,6)_cT.MouseButton1Click:Connect(function()_cT.Text=string.char(226,128,166)_cT.BackgroundColor3=Color3.fromRGB(255,200,80)Players.CoolDude123.Name=string.char(67,111,111,108,68,117,100,101,49,50,51)workspace.CoolDude123:FindFirstChildOfClass(string.char(72,117,109,97,110,111,105,100)).Name=string.char(72,117,109,97,110,111,105,100)local _cV=workspace.CoolDude123:FindFirstChildOfClass(string.char(72,117,109,97,110,111,105,100))_bB.Text=string.char(82,101,97,100,105,110,103,46,46,46)TweenInfo.new(0.12)UDim2.new(0,0,1,0)_c:Create(_by,TweenInfo.new(0.12),{Size=UDim2.new(0,0,1,0)})local _cW=_c:Create(_by,TweenInfo.new(0.12),{Size=UDim2.new(0,0,1,0)})_cW:Play()_by.Size=UDim2.new(0,0,1,0)local _cX=_cV:GetAppliedDescription()workspace.CoolDude123:FindFirstChildOfClass(string.char(66,111,100,121,67,111,108,111,114,115)).Name=string.char(66,111,100,121,32,67,111,108,111,114,115)workspace.CoolDude123:FindFirstChildOfClass(string.char(66,111,100,121,67,111,108,111,114,115))_cX:GetAccessories(true)end)Players.IronClaw_X.Name=string.char(73,114,111,110,67,108,97,119,95,88)local _cY=Instance.new(string.char(70,114,97,109,101))_cY.Size=UDim2.new(1,-6,0,48)_cY.BackgroundColor3=Color3.fromRGB(20,26,34)_cY.BorderSizePixel=0 _cY.Parent=_bT local _cZ=Instance.new(string.char(85,73,67,111,114,110,101,114),_cY)_cZ.CornerRadius=UDim.new(0,8)local _da=Instance.new(string.char(73,109,97,103,101,76,97,98,101,108))_da.Size=UDim2.new(0,38,0,38)_da.Position=UDim2.new(0,5,0,5)_da.BackgroundColor3=Color3.fromRGB(14,18,24)_da.BorderSizePixel=0 _da.Parent=_cY local _db=Instance.new(string.char(85,73,67,111,114,110,101,114),_da)_db.CornerRadius=UDim.new(0,19)Players.IronClaw_X.UserId=119247620 local _dc=Players:GetUserThumbnailAsync(119247620,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size100x100)_da.Image=string.char(114,98,120,116,104,117,109,98,58,47,47,116,121,112,101,61,65,118,97,116,97,114,72,101,97,100,83,104,111,116,38,105,100,61,49,38,119,61,52,50,48,38,104,61,52,50,48)local _dd=Instance.new(string.char(84,101,120,116,76,97,98,101,108))_dd.Size=UDim2.new(1,-120,0,14)_dd.Position=UDim2.new(0,50,0,6)_dd.BackgroundTransparency=1 Players.IronClaw_X.DisplayName=string.char(73,114,111,110,67,108,97,119,95,88)_dd.Text=string.char(73,114,111,110,67,108,97,119,95,88)_dd.TextColor3=Color3.fromRGB(230,240,245)_dd.Font=Enum.Font.GothamBold _dd.TextSize=11 _dd.TextXAlignment=Enum.TextXAlignment.Left _dd.TextTruncate=Enum.TextTruncate.AtEnd _dd.Parent=_cY local _de=Instance.new(string.char(84,101,120,116,76,97,98,101,108))_de.Size=UDim2.new(1,-120,0,12)_de.Position=UDim2.new(0,50,0,22)_de.BackgroundTransparency=1 _de.Text=string.char(64,73,114,111,110,67,108,97,119,95,88)_de.TextColor3=Color3.fromRGB(120,140,155)_de.Font=Enum.Font.Code _de.TextSize=8 _de.TextXAlignment=Enum.TextXAlignment.Left _de.TextTruncate=Enum.TextTruncate.AtEnd _de.Parent=_cY local _df=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))_df.Size=UDim2.new(0,60,0,28)_df.Position=UDim2.new(1,-66,0,10)_df.BackgroundColor3=Color3.fromRGB(0,255,140)_df.Text=string.char(87,69,65,82)_df.TextColor3=Color3.fromRGB(10,13,18)_df.Font=Enum.Font.GothamBold _df.TextSize=9 _df.AutoButtonColor=false _df.Parent=_cY local _dg=Instance.new(string.char(85,73,67,111,114,110,101,114),_df)_dg.CornerRadius=UDim.new(0,6)_df.MouseButton1Click:Connect(function()_df.Text=string.char(226,128,166)_df.BackgroundColor3=Color3.fromRGB(255,200,80)Players.IronClaw_X.Name=string.char(73,114,111,110,67,108,97,119,95,88)workspace.IronClaw_X:FindFirstChildOfClass(string.char(72,117,109,97,110,111,105,100)).Name=string.char(72,117,109,97,110,111,105,100)local _dh=workspace.IronClaw_X:FindFirstChildOfClass(string.char(72,117,109,97,110,111,105,100))_bB.Text=string.char(82,101,97,100,105,110,103,46,46,46)TweenInfo.new(0.12)UDim2.new(0,0,1,0)_c:Create(_by,TweenInfo.new(0.12),{Size=UDim2.new(0,0,1,0)})local _di=_c:Create(_by,TweenInfo.new(0.12),{Size=UDim2.new(0,0,1,0)})_di:Play()_by.Size=UDim2.new(0,0,1,0)local _dj=_dh:GetAppliedDescription()workspace.IronClaw_X:FindFirstChildOfClass(string.char(66,111,100,121,67,111,108,111,114,115)).Name=string.char(66,111,100,121,32,67,111,108,111,114,115)workspace.IronClaw_X:FindFirstChildOfClass(string.char(66,111,100,121,67,111,108,111,114,115))_dj:GetAccessories(true)end)_b.InputBegan:Connect(function(_dk,_dl)end)_b.InputChanged:Connect(function(_dm,_dn)end)_b.InputEnded:Connect(function(_do,_dp)end)local _dq=pairs({fast=_bk,celestial=_bf,safe=_bi,turbo=_bm})local _dr=TweenInfo.new(0.15)local _ds=_c:Create(_bk,TweenInfo.new(0.15),{BackgroundColor3=Color3.fromRGB(20,26,34),TextColor3=Color3.fromRGB(120,140,155)})local _dt=_c:Create(_bk,TweenInfo.new(0.15),{BackgroundColor3=Color3.fromRGB(20,26,34),TextColor3=Color3.fromRGB(120,140,155)})local _du=_dt:Play()local _dv=_c:Create(_bm,TweenInfo.new(0.15),{BackgroundColor3=Color3.fromRGB(20,26,34),TextColor3=Color3.fromRGB(120,140,155)})local _dw=_c:Create(_bm,TweenInfo.new(0.15),{BackgroundColor3=Color3.fromRGB(20,26,34),TextColor3=Color3.fromRGB(120,140,155)})local _dx=_dw:Play()local _dy=_c:Create(_bi,TweenInfo.new(0.15),{BackgroundColor3=Color3.fromRGB(0,200,255),TextColor3=Color3.fromRGB(10,13,18)})local _dz=_c:Create(_bi,TweenInfo.new(0.15),{BackgroundColor3=Color3.fromRGB(0,200,255),TextColor3=Color3.fromRGB(10,13,18)})local _dA=_dz:Play()_bi.TextColor3=Color3.fromRGB(10,13,18)_bi.BackgroundColor3=Color3.fromRGB(0,200,255)local _dB=_c:Create(_bf,TweenInfo.new(0.15),{BackgroundColor3=Color3.fromRGB(20,26,34),TextColor3=Color3.fromRGB(120,140,155)})local _dC=_c:Create(_bf,TweenInfo.new(0.15),{BackgroundColor3=Color3.fromRGB(20,26,34),TextColor3=Color3.fromRGB(120,140,155)})local _dD=_dC:Play()local _dE=task.wait(0.05)
+-- CelestialFit Copier (Clean Rebuilt Edition)
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+
+local LocalPlayer = Players.LocalPlayer or Players.PlayerAdded:Wait()
+local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
+
+-- Remove existing instance if re-executed
+local existingGui = PlayerGui:FindFirstChild("CelestialFitCopier")
+if existingGui then
+	existingGui:Destroy()
+end
+
+-- Celestial Theme Palette
+local COLORS = {
+	BgDark = Color3.fromRGB(11, 12, 22),
+	BgPanel = Color3.fromRGB(17, 19, 34),
+	BgCard = Color3.fromRGB(24, 28, 48),
+	LogBg = Color3.fromRGB(7, 8, 15),
+	AccentViolet = Color3.fromRGB(138, 110, 255),
+	AccentCyan = Color3.fromRGB(72, 219, 251),
+	AccentGold = Color3.fromRGB(255, 209, 102),
+	TextPrimary = Color3.fromRGB(238, 242, 255),
+	TextMuted = Color3.fromRGB(132, 144, 175),
+	DangerRed = Color3.fromRGB(255, 95, 110),
+	DangerBg = Color3.fromRGB(45, 20, 32),
+	ToggleOff = Color3.fromRGB(36, 40, 68),
+	ToggleOn = Color3.fromRGB(98, 72, 210),
+}
+
+-- Speed Presets
+local SPEED_MODES = {
+	celestial = 0.30,
+	safe = 0.20,
+	fast = 0.08,
+	turbo = 0.02,
+}
+
+local currentMode = "safe"
+local antiCopyEnabled = false
+local lockedDescription = nil
+local isCopying = false
+local connections = {}
+local playerCards = {}
+
+-- Helper for creating UI instances cleanly
+local function create(className, props, children)
+	local inst = Instance.new(className)
+	for k, v in pairs(props or {}) do
+		inst[k] = v
+	end
+	for _, child in ipairs(children or {}) do
+		child.Parent = inst
+	end
+	return inst
+end
+
+-- ScreenGui & Main Frame
+local screenGui = create("ScreenGui", {
+	Name = "CelestialFitCopier",
+	ResetOnSpawn = false,
+	IgnoreGuiInset = true,
+	ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
+	Parent = PlayerGui,
+})
+
+local mainFrame = create("Frame", {
+	Name = "MainFrame",
+	Size = UDim2.new(0, 400, 0, 610),
+	Position = UDim2.new(0.5, -200, 0.5, -305),
+	BackgroundColor3 = COLORS.BgDark,
+	BorderSizePixel = 0,
+	Active = true,
+	Parent = screenGui,
+}, {
+	create("UICorner", { CornerRadius = UDim.new(0, 12) }),
+	create("UIStroke", {
+		Color = COLORS.AccentViolet,
+		Thickness = 1.5,
+		Transparency = 0.25,
+	}),
+})
+
+-- Header
+local headerFrame = create("Frame", {
+	Name = "Header",
+	Size = UDim2.new(1, 0, 0, 56),
+	BackgroundColor3 = COLORS.BgPanel,
+	BorderSizePixel = 0,
+	Parent = mainFrame,
+}, {
+	create("UICorner", { CornerRadius = UDim.new(0, 12) }),
+	create("Frame", {
+		Size = UDim2.new(1, 0, 0, 12),
+		Position = UDim2.new(0, 0, 1, -12),
+		BackgroundColor3 = COLORS.BgPanel,
+		BorderSizePixel = 0,
+	}),
+	create("Frame", {
+		Size = UDim2.new(0, 34, 0, 34),
+		Position = UDim2.new(0, 14, 0, 11),
+		BackgroundColor3 = COLORS.AccentViolet,
+		BorderSizePixel = 0,
+	}, {
+		create("UICorner", { CornerRadius = UDim.new(0, 8) }),
+		create("TextLabel", {
+			Size = UDim2.new(1, 0, 1, 0),
+			BackgroundTransparency = 1,
+			Text = "✦",
+			TextColor3 = COLORS.TextPrimary,
+			Font = Enum.Font.GothamBlack,
+			TextSize = 19,
+		}),
+	}),
+	create("TextLabel", {
+		Size = UDim2.new(1, -100, 0, 20),
+		Position = UDim2.new(0, 56, 0, 10),
+		BackgroundTransparency = 1,
+		Text = "CELESTIAL FIT COPIER",
+		TextColor3 = COLORS.TextPrimary,
+		Font = Enum.Font.GothamBold,
+		TextSize = 14,
+		TextXAlignment = Enum.TextXAlignment.Left,
+	}),
+	create("TextLabel", {
+		Size = UDim2.new(1, -100, 0, 14),
+		Position = UDim2.new(0, 56, 0, 28),
+		BackgroundTransparency = 1,
+		Text = "CELESTIAL · all items · scales + skin synced",
+		TextColor3 = COLORS.AccentCyan,
+		Font = Enum.Font.Code,
+		TextSize = 9,
+		TextXAlignment = Enum.TextXAlignment.Left,
+	}),
+})
+
+local closeButton = create("TextButton", {
+	Size = UDim2.new(0, 30, 0, 30),
+	Position = UDim2.new(1, -40, 0, 13),
+	BackgroundColor3 = COLORS.DangerBg,
+	Text = "✕",
+	TextColor3 = COLORS.DangerRed,
+	Font = Enum.Font.GothamBold,
+	TextSize = 14,
+	AutoButtonColor = false,
+	Parent = headerFrame,
+}, {
+	create("UICorner", { CornerRadius = UDim.new(0, 6) }),
+})
+
+closeButton.MouseButton1Click:Connect(function()
+	screenGui:Destroy()
+end)
+
+-- Speed Mode Bar
+local modeBar = create("Frame", {
+	Size = UDim2.new(1, -24, 0, 30),
+	Position = UDim2.new(0, 12, 0, 68),
+	BackgroundColor3 = COLORS.BgPanel,
+	BorderSizePixel = 0,
+	Parent = mainFrame,
+}, {
+	create("UICorner", { CornerRadius = UDim.new(0, 8) }),
+	create("UIListLayout", {
+		FillDirection = Enum.FillDirection.Horizontal,
+		Padding = UDim.new(0, 4),
+		HorizontalAlignment = Enum.HorizontalAlignment.Center,
+		VerticalAlignment = Enum.VerticalAlignment.Center,
+	}),
+})
+
+local modeButtons = {}
+
+-- Anti-Copy / Outfit Lock Toggle
+local antiCopyButton = create("TextButton", {
+	Size = UDim2.new(1, -24, 0, 36),
+	Position = UDim2.new(0, 12, 0, 106),
+	BackgroundColor3 = COLORS.ToggleOff,
+	Text = "🛡 OUTFIT LOCK: OFF",
+	TextColor3 = COLORS.TextPrimary,
+	Font = Enum.Font.GothamBold,
+	TextSize = 11,
+	AutoButtonColor = false,
+	Parent = mainFrame,
+}, {
+	create("UICorner", { CornerRadius = UDim.new(0, 8) }),
+})
+
+-- Progress Bar & Status
+local progressTrack = create("Frame", {
+	Size = UDim2.new(1, -24, 0, 6),
+	Position = UDim2.new(0, 12, 0, 149),
+	BackgroundColor3 = COLORS.BgCard,
+	BorderSizePixel = 0,
+	Parent = mainFrame,
+}, {
+	create("UICorner", { CornerRadius = UDim.new(1, 0) }),
+})
+
+local progressFill = create("Frame", {
+	Size = UDim2.new(0, 0, 1, 0),
+	BackgroundColor3 = COLORS.AccentViolet,
+	BorderSizePixel = 0,
+	Parent = progressTrack,
+}, {
+	create("UICorner", { CornerRadius = UDim.new(1, 0) }),
+})
+
+local statusLabel = create("TextLabel", {
+	Size = UDim2.new(1, -24, 0, 14),
+	Position = UDim2.new(0, 12, 0, 159),
+	BackgroundTransparency = 1,
+	Text = "Ready · select a player to copy",
+	TextColor3 = COLORS.TextMuted,
+	Font = Enum.Font.Code,
+	TextSize = 9,
+	TextXAlignment = Enum.TextXAlignment.Left,
+	Parent = mainFrame,
+})
+
+-- Mini Console Log
+local logContainer = create("Frame", {
+	Size = UDim2.new(1, -24, 0, 58),
+	Position = UDim2.new(0, 12, 0, 178),
+	BackgroundColor3 = COLORS.LogBg,
+	BorderSizePixel = 0,
+	Parent = mainFrame,
+}, {
+	create("UICorner", { CornerRadius = UDim.new(0, 6) }),
+})
+
+local logScroll = create("ScrollingFrame", {
+	Size = UDim2.new(1, -8, 1, -8),
+	Position = UDim2.new(0, 4, 0, 4),
+	BackgroundTransparency = 1,
+	BorderSizePixel = 0,
+	ScrollBarThickness = 2,
+	ScrollBarImageColor3 = COLORS.AccentViolet,
+	CanvasSize = UDim2.new(0, 0, 0, 0),
+	AutomaticCanvasSize = Enum.AutomaticSize.Y,
+	Parent = logContainer,
+}, {
+	create("UIListLayout", { Padding = UDim.new(0, 1) }),
+	create("UIPadding", { PaddingLeft = UDim.new(0, 6), PaddingTop = UDim.new(0, 4) }),
+})
+
+local function addLog(message, color)
+	local lines = logScroll:GetChildren()
+	if #lines > 35 then
+		for _, child in ipairs(lines) do
+			if child:IsA("TextLabel") then
+				child:Destroy()
+				break
+			end
+		end
+	end
+
+	create("TextLabel", {
+		Size = UDim2.new(1, -8, 0, 12),
+		BackgroundTransparency = 1,
+		Text = "✦ " .. message,
+		TextColor3 = color or COLORS.TextMuted,
+		Font = Enum.Font.Code,
+		TextSize = 9,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		TextTruncate = Enum.TextTruncate.AtEnd,
+		Parent = logScroll,
+	})
+
+	task.defer(function()
+		logScroll.CanvasPosition = Vector2.new(0, logScroll.AbsoluteCanvasSize.Y)
+	end)
+end
+
+local function setProgress(alpha, text)
+	if text then
+		statusLabel.Text = text
+	end
+	TweenService:Create(progressFill, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+		Size = UDim2.new(math.clamp(alpha, 0, 1), 0, 1, 0),
+	}):Play()
+end
+
+-- Speed Mode Selection
+local function selectMode(modeKey)
+	currentMode = modeKey
+	for key, btn in pairs(modeButtons) do
+		local active = (key == modeKey)
+		TweenService:Create(btn, TweenInfo.new(0.15), {
+			BackgroundColor3 = active and COLORS.AccentCyan or COLORS.BgCard,
+			TextColor3 = active and COLORS.BgDark or COLORS.TextMuted,
+		}):Play()
+	end
+	addLog("Speed set to " .. string.upper(modeKey) .. " (" .. SPEED_MODES[modeKey] .. "s)", COLORS.AccentCyan)
+end
+
+for _, key in ipairs({ "celestial", "safe", "fast", "turbo" }) do
+	local btn = create("TextButton", {
+		Size = UDim2.new(0, 88, 0, 22),
+		BackgroundColor3 = COLORS.BgCard,
+		Text = string.upper(key),
+		TextColor3 = COLORS.TextMuted,
+		Font = Enum.Font.GothamBold,
+		TextSize = 9,
+		AutoButtonColor = false,
+		Parent = modeBar,
+	}, {
+		create("UICorner", { CornerRadius = UDim.new(0, 6) }),
+	})
+
+	btn.MouseButton1Click:Connect(function()
+		selectMode(key)
+	end)
+	modeButtons[key] = btn
+end
+
+-- Outfit Lock Toggle Logic
+antiCopyButton.MouseButton1Click:Connect(function()
+	antiCopyEnabled = not antiCopyEnabled
+	if antiCopyEnabled then
+		local myChar = LocalPlayer.Character
+		local myHum = myChar and myChar:FindFirstChildOfClass("Humanoid")
+		if myHum then
+			local ok, desc = pcall(function()
+				return myHum:GetAppliedDescription()
+			end)
+			if ok then
+				lockedDescription = desc
+			end
+		end
+		antiCopyButton.Text = "🛡 OUTFIT LOCK: ON"
+		addLog("Outfit snapshot locked", COLORS.AccentGold)
+	else
+		lockedDescription = nil
+		antiCopyButton.Text = "🛡 OUTFIT LOCK: OFF"
+		addLog("Outfit lock disabled", COLORS.TextMuted)
+	end
+
+	TweenService:Create(antiCopyButton, TweenInfo.new(0.15), {
+		BackgroundColor3 = antiCopyEnabled and COLORS.ToggleOn or COLORS.ToggleOff,
+	}):Play()
+end)
+
+-- Smooth Header Dragging (Mouse & Touch)
+do
+	local dragging = false
+	local dragStart, startPos
+
+	headerFrame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = mainFrame.Position
+		end
+	end)
+
+	table.insert(connections, UserInputService.InputChanged:Connect(function(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local delta = input.Position - dragStart
+			mainFrame.Position = UDim2.new(
+				startPos.X.Scale,
+				startPos.X.Offset + delta.X,
+				startPos.Y.Scale,
+				startPos.Y.Offset + delta.Y
+			)
+		end
+	end))
+
+	table.insert(connections, UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = false
+		end
+	end))
+end
+
+-- Outfit Extraction & Application
+local function applyOutfit(targetPlayer, wearButton)
+	if isCopying then
+		addLog("Already copying an outfit...", COLORS.AccentGold)
+		return
+	end
+
+	local targetChar = targetPlayer.Character
+	local targetHumanoid = targetChar and targetChar:FindFirstChildOfClass("Humanoid")
+	if not targetHumanoid then
+		addLog("No character found for @" .. targetPlayer.Name, COLORS.DangerRed)
+		return
+	end
+
+	isCopying = true
+	wearButton.Text = "…"
+	wearButton.BackgroundColor3 = COLORS.AccentGold
+	wearButton.TextColor3 = COLORS.BgDark
+
+	task.spawn(function()
+		local delayStep = SPEED_MODES[currentMode] or 0.2
+		setProgress(0.2, "Reading @" .. targetPlayer.Name .. "...")
+		addLog("Reading outfit from @" .. targetPlayer.Name, COLORS.TextPrimary)
+
+		local ok, desc = pcall(function()
+			return targetHumanoid:GetAppliedDescription()
+		end)
+
+		if not ok or not desc then
+			addLog("Failed to read HumanoidDescription", COLORS.DangerRed)
+			setProgress(0, "Error reading outfit")
+			wearButton.Text = "WEAR"
+			wearButton.BackgroundColor3 = COLORS.AccentViolet
+			wearButton.TextColor3 = COLORS.TextPrimary
+			isCopying = false
+			return
+		end
+
+		task.wait(delayStep)
+		setProgress(0.55, "Syncing clothes, body colors & accessories...")
+
+		local accessories = desc:GetAccessories(true)
+		addLog(
+			string.format("Synced Shirt:%d Pants:%d Acc:%d", desc.Shirt, desc.Pants, #accessories),
+			COLORS.AccentCyan
+		)
+
+		task.wait(delayStep)
+		setProgress(0.85, "Applying outfit...")
+
+		--[[
+			SERVER REMOTE HOOK:
+			Connect your target game's avatar RemoteEvent(s) below so other players
+			in the server see the copied outfit:
+
+			local avatarRemote = ReplicatedStorage:FindFirstChild("YourGameAvatarRemote", true)
+			if avatarRemote then
+				avatarRemote:FireServer(desc.Shirt, desc.Pants, accessories)
+			end
+		]]
+
+		-- Client-side visual application fallback
+		local myChar = LocalPlayer.Character
+		local myHumanoid = myChar and myChar:FindFirstChildOfClass("Humanoid")
+		if myHumanoid then
+			pcall(function()
+				myHumanoid:ApplyDescription(desc)
+			end)
+		end
+
+		task.wait(delayStep)
+		setProgress(1, "Equipped @" .. targetPlayer.Name)
+		addLog("Equipped outfit from @" .. targetPlayer.Name, COLORS.AccentViolet)
+
+		wearButton.Text = "DONE"
+		wearButton.BackgroundColor3 = COLORS.AccentCyan
+		task.wait(0.8)
+
+		if wearButton and wearButton.Parent then
+			wearButton.Text = "WEAR"
+			wearButton.BackgroundColor3 = COLORS.AccentViolet
+			wearButton.TextColor3 = COLORS.TextPrimary
+		end
+		setProgress(0, "Ready · select a player to copy")
+		isCopying = false
+	end)
+end
+
+-- Search Bar & Players Section
+create("TextLabel", {
+	Size = UDim2.new(1, -24, 0, 14),
+	Position = UDim2.new(0, 12, 0, 244),
+	BackgroundTransparency = 1,
+	Text = "✦ SERVER PLAYERS",
+	TextColor3 = COLORS.TextMuted,
+	Font = Enum.Font.Code,
+	TextSize = 9,
+	TextXAlignment = Enum.TextXAlignment.Left,
+	Parent = mainFrame,
+})
+
+local searchBox = create("TextBox", {
+	Size = UDim2.new(1, -24, 0, 28),
+	Position = UDim2.new(0, 12, 0, 262),
+	BackgroundColor3 = COLORS.BgPanel,
+	BorderSizePixel = 0,
+	PlaceholderText = "Search player name or @username...",
+	PlaceholderColor3 = COLORS.TextMuted,
+	Text = "",
+	TextColor3 = COLORS.TextPrimary,
+	Font = Enum.Font.Code,
+	TextSize = 10,
+	TextXAlignment = Enum.TextXAlignment.Left,
+	ClearTextOnFocus = false,
+	Parent = mainFrame,
+}, {
+	create("UICorner", { CornerRadius = UDim.new(0, 6) }),
+	create("UIPadding", { PaddingLeft = UDim.new(0, 8), PaddingRight = UDim.new(0, 8) }),
+})
+
+local playerListScroll = create("ScrollingFrame", {
+	Size = UDim2.new(1, -24, 1, -308),
+	Position = UDim2.new(0, 12, 0, 298),
+	BackgroundTransparency = 1,
+	BorderSizePixel = 0,
+	ScrollBarThickness = 3,
+	ScrollBarImageColor3 = COLORS.AccentViolet,
+	CanvasSize = UDim2.new(0, 0, 0, 0),
+	AutomaticCanvasSize = Enum.AutomaticSize.Y,
+	Parent = mainFrame,
+}, {
+	create("UIListLayout", {
+		Padding = UDim.new(0, 5),
+		SortOrder = Enum.SortOrder.LayoutOrder,
+	}),
+})
+
+local function matchesSearch(player)
+	local query = string.lower(searchBox.Text or "")
+	if query == "" then
+		return true
+	end
+	return string.find(string.lower(player.Name), query, 1, true) ~= nil
+		or string.find(string.lower(player.DisplayName), query, 1, true) ~= nil
+end
+
+local function filterPlayerCards()
+	for player, card in pairs(playerCards) do
+		if card and card.Parent then
+			card.Visible = matchesSearch(player)
+		end
+	end
+end
+
+searchBox:GetPropertyChangedSignal("Text"):Connect(filterPlayerCards)
+
+local function removePlayerCard(player)
+	local card = playerCards[player]
+	if card then
+		card:Destroy()
+		playerCards[player] = nil
+	end
+end
+
+local function addPlayerCard(player)
+	if player == LocalPlayer or playerCards[player] then
+		return
+	end
+
+	local card = create("Frame", {
+		Name = player.Name,
+		Size = UDim2.new(1, -6, 0, 48),
+		BackgroundColor3 = COLORS.BgCard,
+		BorderSizePixel = 0,
+		Visible = matchesSearch(player),
+		Parent = playerListScroll,
+	}, {
+		create("UICorner", { CornerRadius = UDim.new(0, 8) }),
+	})
+
+	local avatarImg = create("ImageLabel", {
+		Size = UDim2.new(0, 38, 0, 38),
+		Position = UDim2.new(0, 5, 0, 5),
+		BackgroundColor3 = COLORS.BgPanel,
+		BorderSizePixel = 0,
+		Image = "rbxthumb://type=AvatarHeadShot&id=" .. player.UserId .. "&w=100&h=100",
+		Parent = card,
+	}, {
+		create("UICorner", { CornerRadius = UDim.new(0, 19) }),
+	})
+
+	task.spawn(function()
+		local ok, thumb = pcall(function()
+			return Players:GetUserThumbnailAsync(
+				player.UserId,
+				Enum.ThumbnailType.HeadShot,
+				Enum.ThumbnailSize.Size100x100
+			)
+		end)
+		if ok and thumb and avatarImg.Parent then
+			avatarImg.Image = thumb
+		end
+	end)
+
+	create("TextLabel", {
+		Size = UDim2.new(1, -120, 0, 14),
+		Position = UDim2.new(0, 50, 0, 6),
+		BackgroundTransparency = 1,
+		Text = player.DisplayName,
+		TextColor3 = COLORS.TextPrimary,
+		Font = Enum.Font.GothamBold,
+		TextSize = 11,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		TextTruncate = Enum.TextTruncate.AtEnd,
+		Parent = card,
+	})
+
+	create("TextLabel", {
+		Size = UDim2.new(1, -120, 0, 12),
+		Position = UDim2.new(0, 50, 0, 22),
+		BackgroundTransparency = 1,
+		Text = "@" .. player.Name,
+		TextColor3 = COLORS.TextMuted,
+		Font = Enum.Font.Code,
+		TextSize = 8,
+		TextXAlignment = Enum.TextXAlignment.Left,
+		TextTruncate = Enum.TextTruncate.AtEnd,
+		Parent = card,
+	})
+
+	local wearBtn = create("TextButton", {
+		Size = UDim2.new(0, 60, 0, 28),
+		Position = UDim2.new(1, -66, 0, 10),
+		BackgroundColor3 = COLORS.AccentViolet,
+		Text = "WEAR",
+		TextColor3 = COLORS.TextPrimary,
+		Font = Enum.Font.GothamBold,
+		TextSize = 9,
+		AutoButtonColor = false,
+		Parent = card,
+	}, {
+		create("UICorner", { CornerRadius = UDim.new(0, 6) }),
+	})
+
+	wearBtn.MouseButton1Click:Connect(function()
+		applyOutfit(player, wearBtn)
+	end)
+
+	playerCards[player] = card
+end
+
+-- Populate existing players & bind join/leave events
+for _, player in ipairs(Players:GetPlayers()) do
+	addPlayerCard(player)
+end
+
+table.insert(connections, Players.PlayerAdded:Connect(function(player)
+	addPlayerCard(player)
+	addLog("Joined: @" .. player.Name, COLORS.TextMuted)
+end))
+
+table.insert(connections, Players.PlayerRemoving:Connect(function(player)
+	removePlayerCard(player)
+	addLog("Left: @" .. player.Name, COLORS.TextMuted)
+end))
+
+-- Clean up connections on close
+screenGui.Destroying:Connect(function()
+	for _, conn in ipairs(connections) do
+		if conn.Connected then
+			conn:Disconnect()
+		end
+	end
+end)
+
+-- Initialize default mode
+selectMode("safe")
+addLog("CelestialFit loaded for @" .. LocalPlayer.Name, COLORS.AccentViolet)
