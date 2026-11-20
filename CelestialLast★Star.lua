@@ -675,7 +675,7 @@ if game.PlaceId ~= 2578460148 then
 	voice:Play()
 	game:GetService("Debris"):AddItem(voice,5)
 end
-chatmsg("Last Star convert/leaked by MONK")
+chatmsg("Last Star convert/leaked by yadsan")
 
 local RPA,RPS,NO = ray(Root.Position,V3(0,-1000,0))
 if RPA then
