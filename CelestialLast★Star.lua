@@ -4,7 +4,7 @@ local args = {
 }
 game:GetService("ReplicatedStorage"):WaitForChild("01_server"):FireServer(unpack(args))
 wait(3)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MANASMCPE/Last-Star/refs/heads/main/Cool-Reanimate.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yadsanpapa/Celestial-Universe-/refs/heads/main/CelestialCool-Reanimate.lua"))()
 wait(.1)
 GetObjects = function(asset) assert(game.GetObjects,"Your executor is not supported! (missing GetObjects)") return game.GetObjects(game,asset) end
 GetInstanceFromScript = function(asset,name,class) for _,v in next,GetObjects(asset)[1]:GetDescendants() do if v:IsA(class) and v["Name"]==name then return v end end end
