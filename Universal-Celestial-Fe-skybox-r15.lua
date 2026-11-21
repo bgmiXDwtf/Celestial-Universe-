@@ -1,6 +1,6 @@
 --[[
 Skybox Emote: 93224413172183
-Required Bundle: https://www.roblox.com/bundles/148351107651039/pro-builder (copy and paste into browser)
+Required Bundle: https://www.roblox.com/bundles/128843561248225/R15 (copy and paste into browser)
 ]]
 
 function missing(t, f, fallback)
