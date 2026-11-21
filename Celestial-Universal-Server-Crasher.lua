@@ -28,7 +28,7 @@ if not getgenv().ServerCrasherErrorMon then
                             local parent = gui.Parent
                             while parent and parent ~= PlayerGui do
                                 if parent:IsA("ScreenGui") or parent:IsA("Frame") then
-                                    parent:Destroy()
+                                    parent:Delustroy()
                                     break
                                 end
                                 parent = parent.Parent
@@ -66,7 +66,7 @@ local TitleLabel = Instance.new("TextLabel")
 TitleLabel.Size = UDim2.new(1, -30, 0, 30)
 TitleLabel.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TitleLabel.Text = " (Universal) Server crasher v2"
+TitleLabel.Text = " Yadsan Server crasher"
 TitleLabel.TextXAlignment = Enum.TextXAlignment.Left
 TitleLabel.Font = Enum.Font.SourceSansBold
 TitleLabel.TextSize = 12
@@ -78,7 +78,7 @@ CircleBtn.Size = UDim2.new(0, 85, 0, 85)
 CircleBtn.Position = UDim2.new(0.5, -42, 0.1, 0)
 CircleBtn.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 CircleBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-CircleBtn.Text = "(Universal) Server crasher v2"
+CircleBtn.Text = "Yadsan Server crasher"
 CircleBtn.TextWrapped = true
 CircleBtn.Font = Enum.Font.SourceSansBold
 CircleBtn.TextSize = 10
@@ -268,4 +268,4 @@ InstantCrashBtn.MouseButton1Click:Connect(function()
     end)
 end)
 
-print("(Universal) Server crasher v2 loaded successfully!")
+print("Yadsan Server crasher loaded successfully!")
